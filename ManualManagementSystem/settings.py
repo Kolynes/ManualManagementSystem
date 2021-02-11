@@ -24,13 +24,12 @@ SECRET_KEY = 'kta^=k65*gh_d%()6a8&--8a$5@(sr5u=twgvs%!%d%!7zpm+2'
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = [
     "127.0.0.1",
-    ""
+    "kolynes.pythonanywhere.com"
 ]
 DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +41,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
